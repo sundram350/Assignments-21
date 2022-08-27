@@ -1,0 +1,85 @@
+Ans=1
+struct employee
+{
+    char name[10];
+    int id;
+    float salary;
+}emp1,emp2;
+
+Ans=2
+int main()
+{
+    struct employee emp1;
+    printf("Enter Employee Data\n");
+    scanf("%s%d%f",emp1.name,&emp1.id,&emp1.salary); 
+    return 0;
+}
+
+Ans=3
+int main()
+{
+    struct employee emp1;
+    printf("Enter Employee Data\n");
+    scanf("%s%d%f",emp1.name,&emp1.id,&emp1.salary);
+    printf("\n%s %d %.3f",emp1.name,emp1.id,emp1.salary);
+    return 0;
+}
+
+Ans=4
+struct employee
+{
+    char name[10];
+    int id;
+    float salary;
+}emp1,emp2;
+
+int main()
+{
+    int  i,j;
+    float temp;
+    struct employee emp1[10];
+    for(i=0;i<10;i++)
+        scanf("%f",&emp1[i].salary);
+        for(i=0;i<10;i++)
+        {
+            for(j=0;j<9;j++)
+                if(emp1[j].salary<emp1[j+1].salary)
+            {
+                temp=emp1[j].salary;
+                emp1[j].salary=emp1[j+1].salary;
+                emp1[j+1].salary=temp;
+            }
+        }
+        for(i=0;i<1;i++)
+         printf("Highest Salary    %.2f\n",emp1[i].salary);
+}
+
+Ans=4
+struct employee
+{
+    char name[10];
+    int id;
+    float salary;
+}emp1,emp2;
+
+int main()
+{
+    int  i,j;
+    float temp;
+    struct employee emp1[10];
+    for(i=0;i<10;i++)
+        scanf("%f",&emp1[i].salary);
+        for(i=0;i<10;i++)
+        {
+            for(j=0;j<9;j++)
+                if(emp1[j].salary<emp1[j+1].salary)
+            {
+                temp=emp1[j].salary;
+                emp1[j].salary=emp1[j+1].salary;
+                emp1[j+1].salary=temp;
+            }
+        }
+        for(i=0;i<10;i++)
+         printf("Highest Salary    %.2f\n",emp1[i].salary);
+}
+
