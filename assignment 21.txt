@@ -54,7 +54,7 @@ int main()
          printf("Highest Salary    %.2f\n",emp1[i].salary);
 }
 
-Ans=5
+Ans=4
 struct employee
 {
     char name[10];
@@ -80,6 +80,40 @@ int main()
             }
         }
         for(i=0;i<10;i++)
-         printf("Highest Sorted Salary    %.2f\n",emp1[i].salary);
+         printf("Highest Salary    %.2f\n",emp1[i].salary);
 }
 
+Ans=9
+struct employee
+{
+    char name[10];
+    int id;
+    float salary;
+}emp1,emp2;
+
+int main()
+{
+    int  i,j;
+    struct employee emp1[10];
+    for(i=0;i<10;i++)
+        scanf("%s%.2d%.2f",&emp1[i].name,&emp1[i].id,&emp1[i].salary);
+
+        for(i=0;i<10;i++)
+         printf("\n%s  %.2d  %.2f",emp1[i].name,emp1[i].id,emp1[i].salary);
+}
+Ans=8
+struct employee
+{
+    char name[10];
+    int id;
+    int classId
+} emp1,emp2;
+
+int main()
+{
+    int  i,j;
+    struct employee emp1[10]= {{"suresh",343,3},{"ramesh",6453,5},{"sundaram",3436,6},{"janvi",3436,6},{"Priya",3436,7},{"maya",3436,8},{"mahak",3436,1},{"mukti",3436,4},{"mukesh",3436,7},{"shivam",3436,6}};
+
+        for(i=0; i<10; i++)
+            printf("\n%s  %.2d  %.2d",emp1[i].name,emp1[i].id,emp1[i].classId);
+    }
